@@ -30,3 +30,12 @@
     width: 100%;
     height: 300px;
 }
+
+.contact {
+    border-top-right-radius: 3rem;
+}
+
+#portafolio {
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
