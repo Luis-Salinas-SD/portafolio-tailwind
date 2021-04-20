@@ -12,7 +12,7 @@
 
 <body>
     <header
-        class=" flex justify-between sticky top-0 z-50 bg-gradient-to-r from-indigo-600 to-green-400 opacity-75 static">
+        class="hidden lg:flex flex justify-between sticky top-0 z-50 bg-gradient-to-r from-indigo-600 to-green-400 opacity-75 bg-fixed">
         <!-- Left -->
         <div class="ml-14">
             <img src="src/img/logo-des.png" alt="" width="100px" height="50px">
@@ -29,18 +29,18 @@
     </header>
 
     <!-- Banner -->
-    <section class="main-banner">
-        <img src="src/img/main-fondo.jpg" alt="">
+    <section class="main-banner top-5">
+        <img src="src/img/main-fondo.jpg" alt="" width="100%" height="100%">
     </section>
 
     <!-- About me -->
-    <section class="flex flex-wrap justify-around mx-auto my-20 z-30" id="about">
+    <section class="flex flex-wrap justify-around mx-auto my-20 z-30 sm:flex-wrap bg-white" id="about">
         <!--! Imagen -->
-        <div class=" w-1/4">
+        <div class="lg:w-1/4 flex b-r">
             <img src="src/img/about-img.svg" alt="">
         </div>
         <!--# Texto -->
-        <div class="self-center w-2/4 text-center md:w-full sm:w-full">
+        <div class="self-center lg:w-2/4 text-center b-g">
             <h2 class="text-5xl my-7 text-gray-800">Acerca de mi</h2>
             <p class="text-2xl text-gray-600">Hola soy Luis Salinas, encantado de conocerte. <br>
                 Soy ingeniero en informática y Frontend Developer Junior, he colaborado con personas maravillosas para
@@ -56,8 +56,8 @@
     <section class=" bg-indigo-400 h-auto" id="portafolio">
         <h2 class="text-center text-6xl text-gray-200 py-4">Portafolio</h2>
         <!-- Proyectos -->
-        <div class="flex flex-wrap justify-around mx-10">
-            <div class="w-96 mx-10 my-5 bg-white rounded-lg overflow-hidden shadow-2xl">
+        <div class="flex flex-wrap justify-around ls:mx-10 md:mx-0">
+            <div class="w-96 sm:mx-0 md:mx-0 mx-10 my-5 bg-white rounded-lg overflow-hidden shadow-2xl b-r">
                 <a href="https://melon-blog.netlify.app/" target="_blank">
                     <img src="src/img/preview-site.png" alt="" srcset="">
                     <article class="p-2">
@@ -109,13 +109,15 @@
     </section>
 
     <!-- Contacto -->
-    <section class="flex text-white bg-gray-700 rounded-tr-sm contact" id="contacto">
-        <div class="w-1/3 flex flex-col self-center p-12">
+    <section class="flex flex-wrap text-white justify-center bg-gray-700 rounded-tr-sm contact" id="contacto">
+        <!-- logo -->
+        <div class="ms:w-9/12 lg:w-1/4 flex flex-col self-center p-12">
             <img src="src/img/logo-des.png" alt="" width="25%" class="self-center">
             <p class="text-center py-10">Todos los días se aprende algo nuevo, que mejor manera de recordarlo que
                 compartiéndolo</p>
         </div>
-        <div class="w-1/3 self-center b-b">
+        <!-- Ubicacion -->
+        <div class="ms:w-full lg:w-1/4 flex flex-col self-center p-12">
             <i class="flex py-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -136,7 +138,12 @@
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg><span class="px-2">paus.impala21@gmail.com</span></i>
         </div>
-        <div class="w-1/3 self-center b-b">redes sociales</div>
+        <!-- social -->
+        <div class="ms:w-9/12 lg:w-1/4 flex self-center py-1 px-10 justify-center text-center">
+            <span class="text-green-700">Nombre</span> <br>
+            <input type="text"
+                class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                placeholder="Escribe tu correo aqui" />
     </section>
 </body>
 

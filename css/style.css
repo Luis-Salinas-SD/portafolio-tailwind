@@ -1,34 +1,5 @@
-.b-r {
-    border: solid 2px red;
-    /*     margin: 3px;
- */
-}
-
-.b-g {
-    border: solid 2px rgb(63, 221, 116);
-    /*     margin: 3px;
- */
-}
-
-.b-b {
-    border: solid 2px rgb(104, 171, 235);
-    margin: 3px;
-}
-
-.b-y {
-    border: solid 2px rgb(225, 253, 66);
-    margin: 3px;
-}
-
 .main-banner {
-    width: auto;
-    height: auto;
-    margin-top: -185px;
-}
-
-.ab {
-    width: 100%;
-    height: 300px;
+    margin-top: -65px;
 }
 
 .contact {
@@ -38,4 +9,10 @@
 #portafolio {
     border-top-right-radius: 3rem;
     border-bottom-left-radius: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+    .main-banner {
+        margin-top: 0;
+    }
 }
