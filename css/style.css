@@ -1,3 +1,7 @@
+.b-r {
+    border: red solid 2px;
+}
+
 .main-banner {
     margin-top: -65px;
 }
