@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/tailwind.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Bienveniu</title>
+    <title>Bienvenidos</title>
 </head>
 
 <body>
@@ -109,15 +109,15 @@
     </section>
 
     <!-- Contacto -->
-    <section class="flex flex-wrap text-white justify-center bg-gray-700 rounded-tr-sm contact b-r" id="contacto">
+    <section class="flex flex-wrap text-white justify-center bg-gray-700 rounded-tr-sm contact" id="contacto">
         <!-- logo -->
-        <div class="ms:w-9/12 lg:w-1/4 flex flex-col self-center p-5 b-r">
+        <div class="ms:w-9/12 lg:w-1/4 flex flex-col self-center p-5">
             <img src="src/img/logo-des.png" alt="" width="25%" class="self-center">
             <p class="text-center py-10">Todos los días se aprende algo nuevo, que mejor manera de recordarlo que
                 compartiéndolo</p>
         </div>
         <!-- Ubicacion -->
-        <div class="ms:w-full lg:w-1/4 flex flex-col self-center p-5 b-r">
+        <div class="ms:w-full lg:w-1/4 flex flex-col self-center p-5">
             <i class="flex py-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -139,7 +139,8 @@
                 </svg><span class="px-2">paus.impala21@gmail.com</span></i>
         </div>
         <!-- social -->
-        <form class="ms:w-9/12 lg:w-1/4 flex self-center py-1 px-10 justify-center text-center flex-col b-r" id="form">
+        <form id="formulario" action="https://formspree.io/f/mgervrva" method="POST"
+            class="ms:w-9/12 lg:w-1/4 flex self-center py-1 px-10 justify-center text-center flex-col">
             <div class="flex my-3">
                 <span class="text-white">Nombre Completo</span>
                 <input type="text" placeholder="Escribe tu correo aqui" required name="nombre"
@@ -147,7 +148,7 @@
             </div>
             <div class="flex mb-3">
                 <span class="text-white">Correo</span>
-                <input type="email" placeholder="Escribe tu correo aqui" required name="email"
+                <input type="email" placeholder="Escribe tu correo aqui" name="email"
                     class=" block mx-3 rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 text-black p-1 flex">
             </div>
             <div class="flex">
