@@ -1,5 +1,13 @@
-.b-r {
-    border: red solid 2px;
+.b-red {
+    border: 2px solid red;
+}
+
+.b-blue {
+    border: 2px solid blue;
+}
+
+.b-green {
+    border: 2px solid green;
 }
 
 .main-banner {
@@ -15,8 +23,10 @@
     border-bottom-left-radius: 3rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     .main-banner {
-        margin-top: 0;
+        position: relative;
+        top: 60px;
+        z-index: 10;
     }
 }

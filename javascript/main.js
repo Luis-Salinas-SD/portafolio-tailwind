@@ -1,3 +1,16 @@
+//* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[   Menu - Responsive  ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+const boton = document.querySelector('#boton')
+const menu = document.querySelector('#menu')
+
+boton.addEventListener('click', () => {
+    menu.classList.toggle('hidden')
+})
+
+//* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[   Menu - Responsive  ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+//! [[[[[[[[[[[[[[[[[[[[[[[[[[[[[   Formulario  ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 const formulario = document.querySelector('#formulario')
 
 formulario.addEventListener('submit', handleSubmit);
@@ -17,3 +30,5 @@ async function handleSubmit(event) {
         this.reset()
     }//if
 }//function
+//! [[[[[[[[[[[[[[[[[[[[[[[[[[[[[   /Formulario  ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+

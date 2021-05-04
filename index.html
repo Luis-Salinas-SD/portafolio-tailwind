@@ -7,34 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/tailwind.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Bienvenidos</title>
 </head>
 
 <body>
-    <header
-        class="hidden lg:flex flex justify-between sticky top-0 z-50 bg-gradient-to-r from-indigo-600 to-green-400 opacity-75 bg-fixed">
-        <!-- Left -->
-        <div class="ml-14">
-            <img src="src/img/logo-des.png" alt="" width="100px" height="50px">
-        </div>
-        <!-- Right -->
-        <div class="flex self-center mr-10">
-            <ul class="flex font-semibold text-white">
-                <li class="mx-10"><a href="#">Inicio</a></li>
-                <li class="mx-10"><a href="#about">Acerca de</a></li>
-                <li class="mx-10"><a href="#portafolio">Portafolio</a></li>
-                <li class="mx-10"><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
+    <header class="justify-between top-0 absolute z-50 w-full">
+        <nav
+            class="flex items-center justify-between flex-wrap bg-teal-500 p-0 bg-gradient-to-r from-indigo-600 to-green-400 opacity-75 relative">
+            <!--$logo  -->
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <img src="src/img/logo-des.png" alt="" width="100px" height="50px">
+
+            </div>
+            <!--$ botton  -->
+            <div class="block lg:hidden">
+                <button id="boton"
+                    class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <!--$ menu  -->
+            <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden relative">
+                <div class="text-sm lg:flex-grow text-2xl">
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                        Inicio </a>
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                        Acerca de </a>
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                        Portafolio </a>
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                        Contacto </a>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Banner -->
-    <section class="main-banner top-5">
+    <section class="main-banner">
         <img src="src/img/main-fondo.jpg" alt="" width="100%" height="100%">
     </section>
 
     <!-- About me -->
-    <section class="flex flex-wrap justify-around mx-auto my-20 z-30 sm:flex-wrap bg-white" id="about">
+    <section class="flex flex-wrap justify-around mx-auto my-20 z-30 sm:flex-wrap bg-white static" id="about">
         <!--! Imagen -->
         <div class="lg:w-1/4 flex">
             <img src="src/img/about-img.svg" alt="">
@@ -137,6 +159,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg><span class="px-2">paus.impala21@gmail.com</span></i>
+            <i class='bx bxl-github text-2xl'><a href="https://github.com/Luis-Salinas-SD"
+                    class="text-base px-2">github</a></i>
+            <i class='bx bxl-linkedin text-2xl'><a href="https://github.com/Luis-Salinas-SD"
+                    class="text-base px-2">Linkedin</a></i>
         </div>
         <!-- social -->
         <form id="formulario" action="https://formspree.io/f/mgervrva" method="POST"
