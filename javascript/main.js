@@ -26,8 +26,14 @@ async function handleSubmit(event) {
         }
     })//fetch
     if (response.ok) {
-        alert('¡¡¡ Gracias por contacatarme, espera mi respuesta pronto !!!');
+        document.querySelector('#modal').classList.toggle('hidden')
+        const close = document.querySelector('#close')
+
+        close.addEventListener('click', () => {
+            modal.classList.toggle('hidden')
+        })
         this.reset()
+
     }//if
 }//function
 //! [[[[[[[[[[[[[[[[[[[[[[[[[[[[[   /Formulario  ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
