@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <header class="justify-between top-0 absolute z-50 w-full">
+    <header class="justify-between top-0 absolute z-50 w-full text-yellow-200 text-xs">
         <nav
-            class="flex items-center justify-between flex-wrap bg-teal-500 p-0 bg-gradient-to-r from-indigo-600 to-green-400 opacity-75 relative">
+            class="flex items-center justify-between flex-wrap bg-teal-500 py-2 px-2 bg-gradient-to-r from-indigo-600 to-green-400 opacity-75 relative">
             <!--$logo  -->
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <img src="src/img/logo-des.png" alt="" width="100px" height="50px">
@@ -23,7 +23,7 @@
             <!--$ botton  -->
             <div class="block lg:hidden">
                 <button id="boton"
-                    class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                    class="flex items-center px-3 py-2 border rounded text-teal-200 border-gray-900 hover:text-white hover:border-white">
                     <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <title>Menu</title>
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -32,18 +32,15 @@
             </div>
             <!--$ menu  -->
             <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden relative">
-                <div class="text-sm lg:flex-grow text-2xl">
-                    <a href="#responsive-header"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                <div class="text-xs lg:flex-grow text-2xl">
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                         Inicio </a>
-                    <a href="#responsive-header"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                         Acerca de </a>
-                    <a href="#responsive-header"
+                    <a href="#portafolio"
                         class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                         Portafolio </a>
-                    <a href="#responsive-header"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                    <a href="#contacto" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                         Contacto </a>
                 </div>
             </div>
@@ -79,6 +76,7 @@
         <h2 class="text-center text-6xl text-gray-100 py-4">Portafolio</h2>
         <!-- Proyectos -->
         <div class="flex flex-wrap justify-around ls:mx-10 md:mx-0">
+            <!--& Proyecto 1  -->
             <div class="w-96 sm:mx-0 md:mx-0 mx-10 my-5 bg-white rounded-lg overflow-hidden shadow-2xl">
                 <a href="https://melon-blog.netlify.app/" target="_blank">
                     <img src="src/img/preview-site.png" alt="" srcset="">
@@ -91,7 +89,8 @@
                 </a>
             </div>
 
-            <div class="w-96 mx-10 my-5 bg-white rounded-lg overflow-hidden shadow-2xl">
+            <!--& Proyecto 2 -->
+            <div class="w-96 sm:mx-0 md:mx-0 mx-10 my-5 bg-white rounded-lg overflow-hidden shadow-2xl">
                 <a href="https://luis-salinas-cv.netlify.app/" target="_blank">
                     <img src="src/img/preview-site-2.png" alt="" srcset="">
                     <article class="p-2">
@@ -103,7 +102,8 @@
                 </a>
             </div>
 
-            <div class="w-96 mx-10 my-5 bg-white rounded-lg overflow-hidden shadow-2xl">
+            <!--& Proyecto 3  -->
+            <div class="w-96 sm:mx-0 md:mx-0 mx-10 my-5 bg-white rounded-lg overflow-hidden shadow-2xl">
                 <a href="https://luis-salinas-sd.github.io/pokeapi/" target="_blank">
                     <img src="src/img/preview-site-3.png" alt="" srcset="">
                     <article class="p-2">
@@ -115,13 +115,40 @@
                 </a>
             </div>
 
-            <div class="w-96 mx-10 my-5 bg-white rounded-lg overflow-hidden shadow-2xl">
+            <!--& Proyecto 4  -->
+            <div class="w-96 sm:mx-0 md:mx-0 mx-10 my-5 bg-white rounded-lg overflow-hidden shadow-2xl">
                 <a href="https://www.alimentosbea.com/" target="_blank">
                     <img src="src/img/preview-site-4.png" alt="" srcset="">
                     <article class="p-2">
                         <h3 class="text-gray-900 text-2xl my-3">Sitio Web</h3>
                         <p class="text-gray-700 text-lg">Sitio web de una productora de alimentos para llegar a un mayor
                             alcance a sus clientes y provedores.</p>
+                        <p class="text-base text-indigo-500 font-semibold italic tracking-wider">Marzo 2020</p>
+                    </article>
+                </a>
+            </div>
+
+            <!--& Proyecto 5  -->
+            <div class="w-96 sm:mx-0 md:mx-0 mx-10 my-5 bg-white rounded-lg overflow-hidden shadow-2xl">
+                <a href="https://luis-salinas-sd.github.io/practica-web/" target="_blank">
+                    <img src="src/img/preview-site-5.png" alt="" srcset="">
+                    <article class="p-2">
+                        <h3 class="text-gray-900 text-2xl my-3">Sitio Web</h3>
+                        <p class="text-gray-700 text-lg">Template de un sitio web básico con la integracion del consmuo
+                            de una API Privada</p>
+                        <p class="text-base text-indigo-500 font-semibold italic tracking-wider">Marzo 2020</p>
+                    </article>
+                </a>
+            </div>
+
+            <!--& Proyecto 6  -->
+            <div class="w-96 sm:mx-0 md:mx-0 mx-10 my-5 bg-white rounded-lg overflow-hidden shadow-2xl">
+                <a href="https://luis-salinas-sd.github.io/fetch-example-InformaticaDP/" target="_blank">
+                    <img src="src/img/preview-site-6.png" alt="" srcset="">
+                    <article class="p-2">
+                        <h3 class="text-gray-900 text-2xl my-3">Visualizar datos API pública</h3>
+                        <p class="text-gray-700 text-lg">Consume una API pública y muestra los datos en forma de tabla.
+                        </p>
                         <p class="text-base text-indigo-500 font-semibold italic tracking-wider">Marzo 2020</p>
                     </article>
                 </a>
@@ -160,13 +187,13 @@
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg><span class="px-2">paus.impala21@gmail.com</span></i>
             <i class='bx bxl-github text-2xl'><a href="https://github.com/Luis-Salinas-SD"
-                    class="text-base px-2">github</a></i>
+                    class="text-base font-sans px-2">github</a></i>
             <i class='bx bxl-linkedin text-2xl'><a href="https://github.com/Luis-Salinas-SD"
-                    class="text-base px-2">Linkedin</a></i>
+                    class="text-base font-sans px-2">Linkedin</a></i>
         </div>
-        <!-- social -->
+        <!-- formulario -->
         <form id="formulario" action="https://formspree.io/f/xrgrerny" method="POST"
-            class="ms:w-9/12 lg:w-1/4 flex self-center py-1 px-10 justify-center text-center flex-col">
+            class="ms:w-9/12 lg:w-1/4 flex self-center py-16 px-10 justify-center text-center flex-col">
             <div class="flex my-3">
                 <span class="text-white">Nombre Completo</span>
                 <input type="text" placeholder="Escribe tu correo aqui" required name="nombre"
@@ -182,9 +209,10 @@
                 <textarea class="rounded-md mx-3 p-1 text-black" name="description" cols="h-auto" rows="3" required
                     placeholder="Escribe el Mensaje"></textarea>
             </div>
-            <button class="bg-green-500 w-auto self-center mt-3 p-1 rounded-lg"> Enviar</button>
+            <button class="bg-green-500 w-auto self-center mt-3 p-2 rounded-lg"> Enviar</button>
         </form>
     </section>
+
     <!-- Modal -->
     <section id="modal" class="hidden">
         <div class="modal-container text-white">
